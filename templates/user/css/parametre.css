@@ -1,0 +1,141 @@
+.parametre-config-profil {
+    width: 85%;
+    display: flex;
+    gap: 30px;
+    margin: 20px auto 0;
+    font-family: Poppins,sans-serif;
+}
+
+.parametre-config-profil .presentation-profil {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    flex-basis: 48%;
+}
+
+.parametre-config-profil .presentation-profil h2 {
+    background-color: #f1f1f1f1;
+    height: 35px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.presentation-profil .profile {
+    padding: 20px;
+}
+
+.presentation-profil .profile .img {
+    display: flex;
+    flex-direction: column;
+}
+
+.parametre-config-profil .presentation-profil .profile img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+
+}
+
+.parametre-config-profil .presentation-profil .list-contact {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.parametre-config-profil .presentation-profil .list-contact li {
+    width: 50%;
+    margin: 2px 0;
+    font-size: 15px;
+}
+
+.parametre-config-profil .description-profil {
+    background-color: #f1f1f1f1;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.parametre-config-profil .complete-profil {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    flex-basis: 48%;
+}
+
+.parametre-config-profil .complete-profil h2 {
+    background-color: #f1f1f1f1;
+    height: 35px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.parametre-config-profil .complete-profil .config {
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.complete-profil .config .from-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.config .from-group input {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.config .from-group select {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+
+.parametre-config-profil .statut-emploi {
+    padding: 0 10px;
+    margin-bottom: 11px;
+}
+.parametre-config-profil .statut-emploi label {
+    font-size: 14px;
+}
+
+.parametre-config-profil .biographie {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.parametre-config-profil .biographie textarea {
+    outline: none;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.parametre-config-profil .form-submit {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.parametre-config-profil .form-submit input {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #2b4570;
+    color: white;
+    font-weight: bold;
+}
+

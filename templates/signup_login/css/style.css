@@ -1,0 +1,242 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.contGlobal {
+    display: flex;
+    min-height: 100vh;
+}
+
+/*------------------------- Gauche ---------------------------------*/
+.panneauGauche {
+    flex: 1 1 33.33%;
+    padding: 25px;
+    display: none;
+}
+
+.panneauGauche h1 {
+    color: #8b97d7;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.panneauGauche h1 strong {
+    color: #5260ad;
+    font-weight: 900;
+}
+
+.formbloc h3 {
+    color: #666;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.formbloc .formGroup {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 18px;
+}
+
+.formbloc .formGroup label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+    transition: .4s ease-out;
+}
+
+.formbloc .formGroup input {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #aaa;
+    color: #666;
+    font-size: 18px;
+    transition: .4s ease-out;
+}
+
+.formbloc .formGroup select {
+    display: block;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #aaa;
+    color: #666;
+    font-size: 16px;
+    font-family: Poppins,sans-serif;
+}
+
+.submit {
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.formbloc .formGroup .buttonSub {
+    display: block;
+    width: 9vw;
+    padding: 10px;
+    border-radius: 999px;
+    border: 2px solid #8b97d7;
+    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+    background-size: 200%;
+    color: #8b97d7;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formbloc .formGroup .buttonSub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 2px solid #fff;
+}
+
+ .formbloc .mdpPerdu a {
+     color: #8b97d7;
+     font-weight: 400;
+     text-decoration: none;
+     padding-bottom: 5px;
+     border-bottom: 2px solid transparent;
+ }
+
+ .formbloc .mdpPerdu a:hover {
+     border-bottom-color: #8b97d7;
+ }
+
+/*------------------------- Droite ---------------------------------*/
+.panneauDroit {
+    flex: 1 1 66.6%;
+    background-color: rgba(82, 96, 178, .5);
+    color: #5260ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    position: relative;
+}
+
+.panneauDroit .font_login img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.panneauDroit h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.panneauDroit .illustration {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+}
+
+.panneauDroit .illustration .login_stick {
+    width: 20vw;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform .3s linear;
+}
+
+.login_stick.active {
+    transform: scale(1.1);
+}
+
+.panneauDroit .illustration .login_stick:hover {
+    transform: scale(1.1);
+}
+
+.illustration .login_stick img {
+    position: absolute;
+    top: 4px;
+    width: 100%;
+}
+
+.illustration .login_stick span {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    bottom: 3px;
+}
+
+.illustration button {
+    margin: 0 10px;
+    border: none;
+    border-radius: 3px;
+    background: #aaa;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.btn-change {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 3px;
+    background: white;
+    height: 42px;
+    width: 100px;
+
+}
+
+.btn-change a {
+    text-decoration: none;
+    color: #8b97d7;
+    transition: all .2s linear;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-change a:hover {
+    background: #8b97d7;
+    color: white;
+}
+
+/*------------------------- Animation ---------------------------------*/
+.formbloc .formGroup:focus-within label,
+.formbloc .formGroup.animation label {
+    transform: translateY(-125%);
+    color: #8b97d7;
+}
+
+.formbloc .formGroup:focus-within input,
+.formbloc .formGroup.animation label {
+    border-bottom-color: #8b97d7;
+}
+
+form.noneForm {
+    display: none;
+    transition: display .5s linear;
+}

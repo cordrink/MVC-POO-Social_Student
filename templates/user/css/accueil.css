@@ -1,0 +1,204 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first: #3E71FF;
+    --second: #2b4570;
+    --thirth: #dfce71;
+}
+
+/*************** SECTION NAV ***************/ 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    height: 70px;
+    border: 1px solid lightgray;
+    padding: 5px 20px;
+    font-family: Poppins, sans-serif;
+    z-index: 10000;
+}
+
+.top-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top-left .logo {
+    font-size: 22px;
+    color: var(--first);
+}
+
+.top-left .logo span {
+    color: var(--thirth);
+}
+
+.top-left .nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.top-left .nav-btn a {
+    text-decoration: none;
+    color: var(--first);
+}
+
+.top-left .nav-btn a:nth-child(2) {
+    border-left: 1px solid lightgray;
+    padding-left: 10px;
+}
+
+.profil {
+    position: absolute;
+    right: 20px;
+    z-index: 10000;
+}
+
+.profil button {
+    border: 1px solid lightgray;
+    background-color: transparent;
+    border-radius: 999px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 2px;
+}
+
+.profil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profil .bx {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    transition: transform .3s linear;
+}
+
+.profil .bx.active {
+    transform: rotate(180deg);
+}
+
+.nav .profil-nav {
+    position: absolute;
+    right: 10px;
+    box-shadow:  0 0 2px grey;
+    background-color: white;
+    top: 69px;
+    width: 280px;
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .3s linear;
+    z-index: -1;
+}
+
+.profil-nav.none {
+    transform: scale(0);
+}
+
+
+.profil-nav .list-profil {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.profil-nav .list-profil li {
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0;
+
+}
+
+.profil-nav .list-profil li:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--thirth);
+    text-transform: uppercase;
+}
+
+.profil-nav .list-profil li:first-child:hover {
+    background-color: lightsteelblue;
+}
+
+.profil-nav .list-profil li:first-child img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.list-profil li a {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--first);
+    padding: 10px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.list-profil li a:hover {
+    background-color: lightblue;
+}
+
+.profil-nav .list-profil li:last-child a {
+    color: #db504a;
+}
+
+.profil-nav .list-profil li:last-child a:hover {
+    background-color: #db504a;
+    color: white;
+}
+
+/*************** SECTION BANNER ***************/
+.banner {
+    display: flex;
+    height: 45vh;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.banner .info-filiere {
+    text-align: center;
+    background-color: var(--second);
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+
+.banner .info-filiere h2 {
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Poppins,sans-serif;
+}
+
+.banner .img-banner {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .img-banner img {
+    width: 100%;
+    height: 100%;
+}

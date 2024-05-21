@@ -1,0 +1,79 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cards-perform {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 280px;
+    height: 225px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.pre-decription {
+    height: 60%;
+}
+
+
+.pre-decription img {
+    width: 100%;
+    height: 100%;
+}
+
+.description-project {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 40%;
+    background-color: white;
+}
+
+.description-project img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: -20px;
+    border: 2px solid lightgray;
+}
+
+.decription {
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.nb-comment {
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    font-family: Poppins,sans-serif;
+    color: grey;
+    align-items: center;
+}
+
+.nb-comment a {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
